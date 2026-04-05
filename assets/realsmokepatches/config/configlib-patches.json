@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "file": "realsmokepatches.json",
+  "patches": {},
+  "settings": [
+    { "type": "separator", "title": "Primitive Survival - Smoker", "weight": 2.0, "collapsible": true },
+    { "code": "EnablePrimitiveSurvival",    "ingui": "Enable",           "type": "boolean", "default": true,  "weight": 2.1 },
+    { "code": "SmokerSmokeProduction",      "ingui": "Smoke Production", "comment": "Amount of smoke emitted per tick.", "type": "integer", "default": 4,  "range": { "min": 1, "max": 20, "step": 1 }, "weight": 2.2 },
+    { "code": "SmokerTemperature",          "ingui": "Temperature",      "comment": "Smoke temperature in degrees.", "type": "integer", "default": 300, "range": { "min": 100, "max": 2000, "step": 50 }, "weight": 2.3 },
+
+    { "type": "separator", "title": "Panda Hearth", "weight": 3.0, "collapsible": true },
+    { "code": "EnablePandaHearth",          "ingui": "Enable",           "type": "boolean", "default": true,  "weight": 3.1 },
+    { "code": "PandaHearthSmokeProduction", "ingui": "Smoke Production", "comment": "Amount of smoke emitted per tick.", "type": "integer", "default": 4,  "range": { "min": 1, "max": 20, "step": 1 }, "weight": 3.2 },
+    { "code": "PandaHearthTemperature",     "ingui": "Temperature",      "comment": "Smoke temperature in degrees.", "type": "integer", "default": 700, "range": { "min": 100, "max": 2000, "step": 50 }, "weight": 3.3 },
+
+    { "type": "separator", "title": "Crucible Furnace", "weight": 4.0, "collapsible": true },
+    { "code": "EnableCrucibleFurnace",            "ingui": "Enable",           "type": "boolean", "default": true,  "weight": 4.1 },
+    { "code": "CrucibleFurnaceSmokeProduction",   "ingui": "Smoke Production", "comment": "Amount of smoke emitted per tick.", "type": "integer", "default": 5,  "range": { "min": 1, "max": 20, "step": 1 }, "weight": 4.2 },
+    { "code": "CrucibleFurnaceTemperature",       "ingui": "Temperature",      "comment": "Smoke temperature in degrees.", "type": "integer", "default": 1300, "range": { "min": 100, "max": 2000, "step": 50 }, "weight": 4.3 },
+
+    { "type": "separator", "title": "Brady's Crude Building - Oil Brazier", "weight": 5.0, "collapsible": true },
+    { "code": "EnableBradyCrudeBuilding",    "ingui": "Enable",           "type": "boolean", "default": true,  "weight": 5.1 },
+    { "code": "OilBrazierSmokeProduction",   "ingui": "Smoke Production", "comment": "Amount of smoke emitted per tick.", "type": "integer", "default": 3,  "range": { "min": 1, "max": 20, "step": 1 }, "weight": 5.2 },
+    { "code": "OilBrazierTemperature",       "ingui": "Temperature",      "comment": "Smoke temperature in degrees.", "type": "integer", "default": 800, "range": { "min": 100, "max": 2000, "step": 50 }, "weight": 5.3 },
+
+    { "type": "separator", "title": "Expanded Beekeeping - Hive Smoker", "weight": 6.0, "collapsible": true },
+    { "code": "EnableExpandedBeekeeping",    "ingui": "Enable",           "type": "boolean", "default": true,  "weight": 6.1 },
+    { "code": "HiveSmokerSmokeProduction",   "ingui": "Smoke Production", "comment": "Amount of smoke emitted per tick.", "type": "integer", "default": 3,  "range": { "min": 1, "max": 20, "step": 1 }, "weight": 6.2 },
+    { "code": "HiveSmokerTemperature",       "ingui": "Temperature",      "comment": "Smoke temperature in degrees.", "type": "integer", "default": 200, "range": { "min": 100, "max": 2000, "step": 50 }, "weight": 6.3 },
+
+    { "type": "separator", "title": "Immersive Lighting - Lamp", "weight": 7.0, "collapsible": true },
+    { "code": "EnableImmersiveLighting",     "ingui": "Enable",           "type": "boolean", "default": true,  "weight": 7.1 },
+    { "code": "LampSmokeProduction",         "ingui": "Smoke Production", "comment": "Amount of smoke emitted per tick.", "type": "integer", "default": 1,  "range": { "min": 1, "max": 10, "step": 1 }, "weight": 7.2 },
+    { "code": "LampTemperature",             "ingui": "Temperature",      "comment": "Smoke temperature in degrees.", "type": "integer", "default": 400, "range": { "min": 100, "max": 2000, "step": 50 }, "weight": 7.3 },
+
+    { "type": "separator", "title": "Candlelight - Candelabras", "weight": 8.0, "collapsible": true },
+    { "code": "EnableCandlelight",           "ingui": "Enable",           "type": "boolean", "default": true,  "weight": 8.1 },
+    { "code": "CandelabraSmokeProduction",   "ingui": "Smoke Production", "comment": "Amount of smoke emitted per tick.", "type": "integer", "default": 1,  "range": { "min": 1, "max": 10, "step": 1 }, "weight": 8.2 },
+    { "code": "CandelabraTemperature",       "ingui": "Temperature",      "comment": "Smoke temperature in degrees.", "type": "integer", "default": 200, "range": { "min": 100, "max": 2000, "step": 50 }, "weight": 8.3 },
+
+    { "type": "separator", "title": "Eternal Stew", "weight": 9.0, "collapsible": true },
+    { "code": "EnablePerpetualStew",                  "ingui": "Enable",                  "type": "boolean", "default": true,  "weight": 9.1 },
+    { "code": "PerpetualStewFirepitSmokeProduction",  "ingui": "Smoke Production", "comment": "Amount of smoke emitted per tick.", "type": "integer", "default": 6, "range": { "min": 1, "max": 20, "step": 1 }, "weight": 9.2 },
+    { "code": "PerpetualStewFirepitTemperature",      "ingui": "Temperature",      "comment": "Smoke temperature in degrees.", "type": "integer", "default": 900, "range": { "min": 100, "max": 2000, "step": 50 }, "weight": 9.3 }
+  ],
+  "formatting": []
+}

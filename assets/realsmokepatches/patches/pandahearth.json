@@ -1,0 +1,23 @@
+[
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "pandahearth" } ],
+    "file": "pandahearth:blocktypes/pandahearthheatsourcebrick.json",
+    "op": "addmerge",
+    "path": "/entityBehaviors",
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 4, "isSmoking": "IsBurning", "temperature": 700, "ventAbove": 1, "canVentSideways": true } }]
+  },
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "pandahearth" } ],
+    "file": "pandahearth:blocktypes/pandahearthheatsourcecobble.json",
+    "op": "addmerge",
+    "path": "/entityBehaviors",
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 4, "isSmoking": "IsBurning", "temperature": 700, "ventAbove": 1, "canVentSideways": true } }]
+  },
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "pandahearth" } ],
+    "file": "pandahearth:blocktypes/pandahearthheatsourceplain.json",
+    "op": "addmerge",
+    "path": "/entityBehaviors",
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 4, "isSmoking": "IsBurning", "temperature": 700, "ventAbove": 1, "canVentSideways": true } }]
+  }
+]

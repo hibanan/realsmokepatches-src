@@ -3,3 +3,4 @@ obj/
 *.dll
 *.pdb
 *.deps.json
+Directory.Build.props.user

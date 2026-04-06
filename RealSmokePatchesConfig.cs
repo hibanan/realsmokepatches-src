@@ -2,15 +2,25 @@ namespace RealSmokePatches;
 
 public class RealSmokePatchesConfig
 {
-    // Primitive Survival - Smoker
-    public bool EnablePrimitiveSurvival { get; set; } = true;
-    public int SmokerSmokeProduction { get; set; } = 4;
-    public int SmokerTemperature { get; set; } = 300;
+    // Ancient Tools - Pitch Torch
+    public bool EnableAncientTools { get; set; } = true;
+    public int PitchTorchSmokeProduction { get; set; } = 2;
+    public int PitchTorchTemperature { get; set; } = 1100;
 
-    // Panda Hearth
-    public bool EnablePandaHearth { get; set; } = true;
-    public int PandaHearthSmokeProduction { get; set; } = 4;
-    public int PandaHearthTemperature { get; set; } = 700;
+    // Panda Hearth - Brick
+    public bool EnablePandaHearthBrick { get; set; } = true;
+    public int PandaHearthBrickSmokeProduction { get; set; } = 4;
+    public int PandaHearthBrickTemperature { get; set; } = 700;
+
+    // Panda Hearth - Cobble
+    public bool EnablePandaHearthCobble { get; set; } = true;
+    public int PandaHearthCobbleSmokeProduction { get; set; } = 4;
+    public int PandaHearthCobbleTemperature { get; set; } = 700;
+
+    // Panda Hearth - Plain
+    public bool EnablePandaHearthPlain { get; set; } = true;
+    public int PandaHearthPlainSmokeProduction { get; set; } = 4;
+    public int PandaHearthPlainTemperature { get; set; } = 700;
 
     // Crucible Furnace
     public bool EnableCrucibleFurnace { get; set; } = true;
@@ -32,10 +42,20 @@ public class RealSmokePatchesConfig
     public int LampSmokeProduction { get; set; } = 1;
     public int LampTemperature { get; set; } = 400;
 
-    // Candlelight - Candelabras
-    public bool EnableCandlelight { get; set; } = true;
-    public int CandelabraSmokeProduction { get; set; } = 1;
-    public int CandelabraTemperature { get; set; } = 200;
+    // Candlelight - Candelabra 1
+    public bool EnableCandelabra1 { get; set; } = true;
+    public int Candelabra1SmokeProduction { get; set; } = 1;
+    public int Candelabra1Temperature { get; set; } = 200;
+
+    // Candlelight - Candelabra 2
+    public bool EnableCandelabra2 { get; set; } = true;
+    public int Candelabra2SmokeProduction { get; set; } = 1;
+    public int Candelabra2Temperature { get; set; } = 200;
+
+    // Candlelight - Candelabra 3
+    public bool EnableCandelabra3 { get; set; } = true;
+    public int Candelabra3SmokeProduction { get; set; } = 1;
+    public int Candelabra3Temperature { get; set; } = 200;
 
     // Eternal Stew - Firepit
     public bool EnablePerpetualStew { get; set; } = true;

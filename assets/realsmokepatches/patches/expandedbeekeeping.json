@@ -1,0 +1,16 @@
+[
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "expandedbeekeeping" } ],
+    "file": "expandedbeekeeping:blocktypes/hivesmoker.json",
+    "op": "addmerge",
+    "path": "/entityBehaviorsByType",
+    "value": { "*-lit": [] }
+  },
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "expandedbeekeeping" } ],
+    "file": "expandedbeekeeping:blocktypes/hivesmoker.json",
+    "op": "addmerge",
+    "path": "/entityBehaviorsByType/*-lit",
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 3, "isSmoking": "IsLit", "temperature": 200, "ventAbove": 1, "canVentSideways": true } }]
+  }
+]

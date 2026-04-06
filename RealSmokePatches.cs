@@ -28,14 +28,21 @@ public class RealSmokePatchesModSystem : ModSystem
 
             switch (domain)
             {
-                case "primitivesurvival":
-                    Apply(block, config.EnablePrimitiveSurvival,
-                        config.SmokerSmokeProduction, config.SmokerTemperature);
+                case "ancienttools":
+                    Apply(block, config.EnableAncientTools,
+                        config.PitchTorchSmokeProduction, config.PitchTorchTemperature);
                     break;
 
                 case "pandahearth":
-                    Apply(block, config.EnablePandaHearth,
-                        config.PandaHearthSmokeProduction, config.PandaHearthTemperature);
+                    if (path.Contains("brick"))
+                        Apply(block, config.EnablePandaHearthBrick,
+                            config.PandaHearthBrickSmokeProduction, config.PandaHearthBrickTemperature);
+                    else if (path.Contains("cobble"))
+                        Apply(block, config.EnablePandaHearthCobble,
+                            config.PandaHearthCobbleSmokeProduction, config.PandaHearthCobbleTemperature);
+                    else if (path.Contains("plain"))
+                        Apply(block, config.EnablePandaHearthPlain,
+                            config.PandaHearthPlainSmokeProduction, config.PandaHearthPlainTemperature);
                     break;
 
                 case "cruciblefurnace":
@@ -59,8 +66,15 @@ public class RealSmokePatchesModSystem : ModSystem
                     break;
 
                 case "candlelight":
-                    Apply(block, config.EnableCandlelight,
-                        config.CandelabraSmokeProduction, config.CandelabraTemperature);
+                    if (path.Contains("candelabra1"))
+                        Apply(block, config.EnableCandelabra1,
+                            config.Candelabra1SmokeProduction, config.Candelabra1Temperature);
+                    else if (path.Contains("candelabra2"))
+                        Apply(block, config.EnableCandelabra2,
+                            config.Candelabra2SmokeProduction, config.Candelabra2Temperature);
+                    else if (path.Contains("candelabra3"))
+                        Apply(block, config.EnableCandelabra3,
+                            config.Candelabra3SmokeProduction, config.Candelabra3Temperature);
                     break;
 
                 case "perpetualstew":
@@ -78,6 +92,12 @@ public class RealSmokePatchesModSystem : ModSystem
             Remove(block);
             return;
         }
+
+        // Deduplicate: if another compat mod also patched this block, collapse to one entry
+        bool seen = false;
+        block.BlockEntityBehaviors = block.BlockEntityBehaviors
+            .Where(b => b.Name != BehaviorName || !seen && (seen = true))
+            .ToArray();
 
         var beh = block.BlockEntityBehaviors.FirstOrDefault(b => b.Name == BehaviorName);
         if (beh?.properties?.Token is JObject obj)

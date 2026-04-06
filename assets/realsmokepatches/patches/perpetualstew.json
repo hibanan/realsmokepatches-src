@@ -1,0 +1,9 @@
+[
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "perpetualstew" } ],
+    "file": "perpetualstew:blocktypes/perpetualstewfirepit.json",
+    "op": "addmerge",
+    "path": "/entityBehaviors",
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 6, "isSmoking": "IsBurning", "temperature": 900, "ventAbove": 1, "multiVent": true, "canVentSideways": true } }]
+  }
+]

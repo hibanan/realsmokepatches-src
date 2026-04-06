@@ -1,0 +1,16 @@
+[
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "ancienttools" } ],
+    "file": "ancienttools:blocktypes/pitchtorch.json",
+    "op": "addmerge",
+    "path": "/entityBehaviorsByType",
+    "value": { "*-lit-*": [] }
+  },
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "ancienttools" } ],
+    "file": "ancienttools:blocktypes/pitchtorch.json",
+    "op": "addmerge",
+    "path": "/entityBehaviorsByType/*-lit-*",
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 2, "temperature": 1100, "ventAbove": 1, "canVentSideways": true } }]
+  }
+]

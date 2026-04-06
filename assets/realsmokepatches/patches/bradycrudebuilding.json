@@ -1,0 +1,16 @@
+[
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "bradycrudebuilding" } ],
+    "file": "bradycrudebuilding:blocktypes/clay/fired/oilbrazier.json",
+    "op": "addmerge",
+    "path": "/entityBehaviorsByType",
+    "value": { "*-lit": [] }
+  },
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "bradycrudebuilding" } ],
+    "file": "bradycrudebuilding:blocktypes/clay/fired/oilbrazier.json",
+    "op": "addmerge",
+    "path": "/entityBehaviorsByType/*-lit",
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 3, "isSmoking": "IsHot", "temperature": 800, "ventAbove": 1, "canVentSideways": true } }]
+  }
+]

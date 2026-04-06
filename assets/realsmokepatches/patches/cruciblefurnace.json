@@ -1,0 +1,9 @@
+[
+  {
+    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "cruciblefurnace" } ],
+    "file": "cruciblefurnace:blocktypes/cruciblefurnaceblock.json",
+    "op": "addmerge",
+    "path": "/entityBehaviors",
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 5, "isSmoking": "IsBurning", "temperature": 1300, "ventAbove": 2, "canVentSideways": false } }]
+  }
+]

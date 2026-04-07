@@ -8,11 +8,11 @@ Adds [Real Smoke](https://mods.vintagestory.at/realsmoke) physics-based smoke to
 |-----|----------|
 | [Ancient Tools](https://mods.vintagestory.at/ancienttools) | Pitch Torch |
 | [Panda Hearths](https://mods.vintagestory.at/pandahearth) | Hearth (Brick, Cobble, Plain) |
+| [Candlelight](https://mods.vintagestory.at/candlelight) | Candelabra (1, 2, 3) |
 | [Crucible Furnace](https://mods.vintagestory.at/cruciblefurnace) | Crucible Furnace |
 | [Crude Building Elements](https://mods.vintagestory.at/bradycrudebuilding) | Oil Brazier |
 | [Expanded Beekeeping](https://mods.vintagestory.at/show/mod/39677) | Hive Smoker |
 | [Immersive Lighting](https://mods.vintagestory.at/techyimmersivelighting) | Lamp |
-| [Candlelight](https://mods.vintagestory.at/candlelight) | Candelabra (1, 2, 3) |
 | [Eternal Stew](https://mods.vintagestory.at/eternalstew) | Stove |
 
 - Includes handling for duplicate patches (such as: https://mods.vintagestory.at/realsmokeforancienttools).

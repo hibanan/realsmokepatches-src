@@ -1,4 +1,5 @@
 # Real Smoke Compatibility Patches
+https://mods.vintagestory.at/realsmokecompat
 
 Adds [Real Smoke](https://mods.vintagestory.at/realsmoke) physics-based smoke to blocks from a variety of popular mods.
 

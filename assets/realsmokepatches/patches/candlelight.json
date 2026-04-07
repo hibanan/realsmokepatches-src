@@ -4,20 +4,20 @@
     "file": "candlelight:blocktypes/candelabra1.json",
     "op": "addmerge",
     "path": "/entityBehaviors",
-    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 1, "isSmoking": "IsLit", "temperature": 200, "ventAbove": 1, "canVentSideways": true } }]
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 1, "isSmoking": "Lit", "temperature": 200, "ventAbove": 1, "canVentSideways": true } }]
   },
   {
     "dependsOn": [ { "modid": "realsmoke" }, { "modid": "candlelight" } ],
     "file": "candlelight:blocktypes/candelabra2.json",
     "op": "addmerge",
     "path": "/entityBehaviors",
-    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 1, "isSmoking": "IsLit", "temperature": 200, "ventAbove": 1, "canVentSideways": true } }]
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 1, "isSmoking": "Lit", "temperature": 200, "ventAbove": 1, "canVentSideways": true } }]
   },
   {
     "dependsOn": [ { "modid": "realsmoke" }, { "modid": "candlelight" } ],
     "file": "candlelight:blocktypes/candelabra3.json",
     "op": "addmerge",
     "path": "/entityBehaviors",
-    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 1, "isSmoking": "IsLit", "temperature": 200, "ventAbove": 1, "canVentSideways": true } }]
+    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 1, "isSmoking": "Lit", "temperature": 200, "ventAbove": 1, "canVentSideways": true } }]
   }
 ]

@@ -3,28 +3,18 @@
     "dependsOn": [ { "modid": "realsmoke" }, { "modid": "immersivelighting" } ],
     "file": "immersivelighting:blocktypes/lamp.json",
     "op": "addmerge",
-    "path": "/entityBehaviorsByType",
-    "value": { "*-low": [], "*-med": [], "*-high": [] }
-  },
-  {
-    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "immersivelighting" } ],
-    "file": "immersivelighting:blocktypes/lamp.json",
-    "op": "addmerge",
-    "path": "/entityBehaviorsByType/*-low",
-    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 1, "isSmoking": "IsLit", "temperature": 400, "ventAbove": 1, "canVentSideways": true } }]
-  },
-  {
-    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "immersivelighting" } ],
-    "file": "immersivelighting:blocktypes/lamp.json",
-    "op": "addmerge",
-    "path": "/entityBehaviorsByType/*-med",
-    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 1, "isSmoking": "IsLit", "temperature": 400, "ventAbove": 1, "canVentSideways": true } }]
-  },
-  {
-    "dependsOn": [ { "modid": "realsmoke" }, { "modid": "immersivelighting" } ],
-    "file": "immersivelighting:blocktypes/lamp.json",
-    "op": "addmerge",
-    "path": "/entityBehaviorsByType/*-high",
-    "value": [{ "name": "BlockEntityBehaviorRealSmokeEmitter", "properties": { "smokeProduction": 1, "isSmoking": "IsLit", "temperature": 400, "ventAbove": 1, "canVentSideways": true } }]
+    "path": "/entityBehaviors",
+    "value": [
+      {
+        "name": "BlockEntityBehaviorRealSmokeEmitter",
+        "properties": {
+          "smokeProduction": 1,
+          "isSmoking": "_lit",
+          "temperature": 400,
+          "ventAbove": 1,
+          "canVentSideways": true
+        }
+      }
+    ]
   }
 ]

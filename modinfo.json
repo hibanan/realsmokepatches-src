@@ -2,9 +2,9 @@
   "type": "code",
   "modid": "realsmokepatches",
   "name": "Real Smoke Compatibility Patches",
-  "authors": ["tomik"],
+  "authors": ["tom4455"],
   "description": "Adds Real Smoke physics-based smoke to blocks from Ancient Tools, Panda Hearth, Crucible Furnace, Brady's Crude Building, Expanded Beekeeping, Immersive Lighting, Candlelight, and Eternal Stew. Supports ConfigLib for in-game configuration.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "dependencies": {
     "game": "1.21.0",
     "realsmoke": ""
